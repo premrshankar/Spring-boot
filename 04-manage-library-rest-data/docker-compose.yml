@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: premrshankar
+      POSTGRES_PASSWORD: premrshankar
+    ports:
+      - '5432:5432'
